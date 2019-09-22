@@ -1,48 +1,74 @@
 *{
-   margin: 0;
-   padding: 0; 
-   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+.menu_gor {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(197, 152, 39, 0.788);
 }
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16 px;
-    line-height: 1.7;
-    color:black;
+.menu_gor li{
+    float: left;  
 }
-.header{
-    background-image: 
-    linear-gradient(to right bottom, rgba(0, 128, 0, 0.911), rgba(255, 192, 203, 0.726)),
-    url(image/stock-photo-white-transparent-leaf-on-mirror-surface-with-reflection-on-turquoise-background-macro-artistic-1029171697.jpg);
-    height: 95vh;
-    background-size: cover;
-    background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-    position: relative;
+.menu_gor li a, .dropbth {
+    display: block;
+    height: 30px;
+    width: 200px;
+    border-right: 1px solid black;
+    padding-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.menu_gor li a:last-child{
+    border-left: 1px solid black; 
+}
+.menu_gor li a:hover, .dropdown:hover .dropbth{
+    background-color: rgba(21, 78, 59, 0.61);
+    cursor: pointer;
+}
+.dropdown{
+    display: block; 
+}
+.dropdown_content{
+    display: none;
+    position: absolute; 
+    z-index: 1;
+}
+.dropdown_content a{
+    background-color: rgba(197, 152, 39, 0.788);
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    
     }
-.header_logobox{
-     position: absolute;
-     top: 40px;
-     left: 40px;
-  }
-.header_heading {
-    position: absolute;
-    top: 40%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    color: honeydew;
-    text-transform: uppercase;
-  }
-  .header_heading_main{
-      display: block;
-      font-size: 50px;
-      font-weight: bold;
-      letter-spacing: 30px;
+.dropdown_content a:last-child{
+    border-radius: 0 0 5px 5px;
+} 
 
-  }
-  .header_heading_sub{
-      display: block;
-      font-size: 20px;
-      letter-spacing: 18px;
-  }
-  
+.dropdown:hover .dropdown_content{
+display: block;
+}
+.drdowimg{
+    position: relative;
+    display: inline-block;
+}
+.drdowimg{
+    float: right;
+    padding: 20px;
+}
+.drdowimg_content{
+    display: none;
+    position: absolute;
+    box-shadow: 0px 0px 50px 0px blueviolet;
+    right: 20px;
+}
+.drdowimg:hover .drdowimg_content{
+    display: block;
+    z-index: 1;
+}
+.drdowimg_name {
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
