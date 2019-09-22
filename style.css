@@ -2,73 +2,40 @@
     margin: 0;
     padding: 0;
 }
-.menu_gor {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: rgba(197, 152, 39, 0.788);
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
-.menu_gor li{
-    float: left;  
+.container-box-1 {
+    height: 450px;
+    width: 450px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
 }
-.menu_gor li a, .dropbth {
-    display: block;
-    height: 30px;
-    width: 200px;
-    border-right: 1px solid black;
-    padding-top: 5px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-.menu_gor li a:last-child{
-    border-left: 1px solid black; 
-}
-.menu_gor li a:hover, .dropdown:hover .dropbth{
-    background-color: rgba(21, 78, 59, 0.61);
-    cursor: pointer;
-}
-.dropdown{
-    display: block; 
-}
-.dropdown_content{
-    display: none;
-    position: absolute; 
-    z-index: 1;
-}
-.dropdown_content a{
-    background-color: rgba(197, 152, 39, 0.788);
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+.container-box-2 {
+    height: 450px;
+    width: 480px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
     
-    }
-.dropdown_content a:last-child{
-    border-radius: 0 0 5px 5px;
-} 
-
-.dropdown:hover .dropdown_content{
-display: block;
 }
-.drdowimg{
-    position: relative;
-    display: inline-block;
+.item1 {
+   font-size: 40px;
+   background-color: brown;
+   height: 220px;
+   width: 220px;
+   text-align: end;
 }
-.drdowimg{
-    float: right;
-    padding: 20px;
-}
-.drdowimg_content{
-    display: none;
-    position: absolute;
-    box-shadow: 0px 0px 50px 0px blueviolet;
-    right: 20px;
-}
-.drdowimg:hover .drdowimg_content{
-    display: block;
-    z-index: 1;
-}
-.drdowimg_name {
-  text-align: center;
-  padding: 15px;
-  font-weight: bold;
-}
+.item2 {
+   
+    font-size: 40px;
+    background-color: brown;
+    height: 140px;
+    width: 150px;
+    text-align: end;
+ }
