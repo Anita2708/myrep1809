@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0; }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 50px; }
+  
+  h1 {
+    text-align: center;
+    font-variant: small-caps; }
+  
+  .table-main {
+    width: 100%; }
+    .table-main td {
+      border: 1px solid white;
+      width: 5%;
+      height: 70px; }
+      .table-main td .list1 {
+        display: flex;
+        flex-flow: column wrap;
+        height: 216.4px;
+        justify-content: center;
+        align-content: center; }
+        .table-main td .list1-grey {
+          font-weight: bold;
+          font-size: 15px;
+          padding-bottom: 5px;
+          list-style-image: url(image/grey-square.gif); }
+        .table-main td .list1-orange {
+          font-weight: bold;
+          font-size: 15px;
+          padding-bottom: 5px;
+          list-style-image: url(image/orange-square.gif); }
+        .table-main td .list1-red {
+          font-weight: bold;
+          font-size: 15px;
+          padding-bottom: 5px;
+          list-style-image: url(image/red-square.gif); }
+        .table-main td .list1-yellow {
+          font-weight: bold;
+          font-size: 15px;
+          padding-bottom: 5px;
+          list-style-image: url(image/yellow-square.gif); }
+      .table-main td .list2-green {
+        font-weight: bold;
+        font-size: 15px;
+        padding-bottom: 5px;
+        list-style-image: url(image/green-square.gif); }
+      .table-main td .list2-lightgreen {
+        font-weight: bold;
+        font-size: 15px;
+        padding-bottom: 5px;
+        list-style-image: url(image/lightgreen-square.gif); }
+      .table-main td .list2-cyan {
+        font-weight: bold;
+        font-size: 15px;
+        padding-bottom: 5px;
+        list-style-image: url(image/cyan-square.gif); }
+      .table-main td .list3-blue {
+        font-weight: bold;
+        font-size: 15px;
+        padding-bottom: 5px;
+        list-style-image: url(image/blue-square.gif); }
+      .table-main td .list3-lan {
+        font-weight: bold;
+        font-size: 15px;
+        padding-bottom: 5px;
+        list-style-image: url(image/lan-square.gif); }
+      .table-main td .list3-act {
+        font-weight: bold;
+        font-size: 15px;
+        padding-bottom: 5px;
+        list-style-image: url(image/act-square.gif); }
+      .table-main td .number {
+        font-size: 10px;
+        padding-top: 1px;
+        padding-left: 2px; }
+        .table-main td .number-span {
+          font-size: 14px;
+          font-weight: bold;
+          text-align: center; }
+      .table-main td .fullname {
+        text-align: center;
+        font-size: 8px; }
+      .table-main td .element {
+        font-weight: 1000;
+        font-size: 25px;
+        text-align: center; }
+    .table-main .elements-grey {
+      background-color: #a8a4a4; }
+    .table-main .elements-orange {
+      background-color: #e7a11f; }
+    .table-main .elements-red {
+      background-color: #d11616; }
+    .table-main .elements-blue {
+      background-color: #4848df; }
+    .table-main .elements-green {
+      background-color: #069e06; }
+    .table-main .elements-lightgreen {
+      background-color: #5cf7c3; }
+    .table-main .elements-yellow {
+      background-color: yellow; }
+    .table-main .elements-cyan {
+      background-color: cyan; }
+    .table-main .elements-lan {
+      background-color: #8d33e0; }
+    .table-main .elements-act {
+      background-color: palevioletred; }
+  
+  .table-sub {
+    width: 97%;
+    margin-top: 30px; }
+    .table-sub td {
+      border: 1px solid white;
+      width: 5%;
+      height: 70px;
+      /*&:second-child {
+              width: 3%;
+          }*/ }
+      .table-sub td:first-child {
+        width: 9%; }
+      .table-sub td .number {
+        font-size: 10px;
+        padding-top: 1px;
+        padding-left: 2px; }
+      .table-sub td .fullname {
+        text-align: center;
+        font-size: 8px; }
+      .table-sub td .element {
+        font-weight: 1000;
+        font-size: 25px;
+        text-align: center; }
+    .table-sub .elements-lan {
+      background-color: #8d33e0; }
+    .table-sub .elements-act {
+      background-color: palevioletred; }
+    .table-sub .group {
+      font-weight: bold;
+      font-size: 12px;
+      text-align: end; }
+    .table-sub .star {
+      font-weight: bold;
+      font-size: 30px;
+      text-align: end;
+      color: #8d33e0;
+      width: 2%; }
+    .table-sub .star2 {
+      font-weight: bold;
+      font-size: 30px;
+      text-align: end;
+      color: palevioletred;
+      width: 2%; }
+  
+  @media screen and (max-width: 768px) {
+    .table-main {
+      width: 100%; }
+      .table-main tr {
+        display: flex;
+        flex-flow: row wrap; }
+        .table-main tr td {
+          width: 15%; }
+          .table-main tr td .list1 {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-start; }
+          .table-main tr td .list3-blue, .table-main tr td .list3-lan, .table-main tr td .list3-act, .table-main tr td .list1-red, .table-main tr td .list1-yellow, .table-main tr td .list1-orange, .table-main tr td .list1-grey, .table-main tr td .list2-green, .table-main tr td .list2-lightgreen, .table-main tr td .list2-cyan {
+            font-size: 10px; }
+          .table-main tr td .list2-green, .table-main tr td .list2-lightgreen, .table-main tr td .list2-cyan, .table-main tr td .list3-blue, .table-main tr td .list3-lan, .table-main tr td .list3-act {
+            margin-left: 20px; }
+    .table-sub tr {
+      display: flex;
+      flex-flow: row wrap;
+      height: 350px; }
+      .table-sub tr td {
+        width: 15%; }
+        .table-sub tr td:first-child {
+          width: 30%; } }
+  
