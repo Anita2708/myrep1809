@@ -1,19 +1,19 @@
 @mixin typography {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 3rem;
     text-align: end;   
 }
 @mixin typography-element {
     font-weight: 1000;
-    font-size: 25px;
+    font-size: 2.5rem;
     text-align: center; 
 }
 @mixin typography-fullname {
     text-align: center;
-    font-size: 8px;
+    font-size: 0.8rem;
 }
 @mixin typography-number {
-    font-size: 10px;
+    font-size: 1rem;
     padding-top: 1px;
     padding-left: 2px;
 }
@@ -24,14 +24,16 @@
 }
 @mixin list-style {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1.5rem;
     padding-bottom: 5px;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: 0;
+}
+html {
+    font-size: 62.5%;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -39,6 +41,7 @@ body {
 }
 h1 {
     text-align: center;
+    font-size: 3rem;
     font-variant: small-caps;
 }
 .table-main {
@@ -52,47 +55,47 @@ h1 {
             align-content: center;   
             &-grey {
                 @include list-style;
-                list-style-image: url(image/grey-square.gif);
+                list-style-image: url(../image/grey-square.gif);
             }
             &-orange {
                  @include list-style;
-                list-style-image: url(image/orange-square.gif);
+                list-style-image: url(../image/orange-square.gif);
             }
             &-red {
                  @include list-style;
-                list-style-image: url(image/red-square.gif);
+                list-style-image: url(../image/red-square.gif);
             }
             &-yellow {
                  @include list-style;
-                list-style-image: url(image/yellow-square.gif);
+                list-style-image: url(../image/yellow-square.gif);
             }
         }
         .list2 {
             &-green {
                  @include list-style;
-                list-style-image: url(image/green-square.gif);
+                list-style-image: url(../image/green-square.gif);
             }
             &-lightgreen {
                  @include list-style;
-                list-style-image: url(image/lightgreen-square.gif);
+                list-style-image: url(../image/lightgreen-square.gif);
             }
             &-cyan {
                  @include list-style;
-                list-style-image: url(image/cyan-square.gif);
+                list-style-image: url(../image/cyan-square.gif);
             }
         }
         .list3 {
             &-blue {
                  @include list-style;
-                list-style-image: url(image/blue-square.gif);
+                list-style-image: url(../image/blue-square.gif);
             }
             &-lan {
                  @include list-style;
-                list-style-image: url(image/lan-square.gif);
+                list-style-image: url(../image/lan-square.gif);
             }
             &-act {
                  @include list-style;
-                list-style-image: url(image/act-square.gif);
+                list-style-image: url(../image/act-square.gif);
             }
         }
               
@@ -100,7 +103,7 @@ h1 {
         .number {
             @include typography-number;
             &-span {
-                font-size: 14px;
+                font-size: 1.4rem;
                 font-weight: bold;
                 text-align: center;
             }
@@ -172,7 +175,7 @@ h1 {
     }
     .group {
         font-weight: bold;
-        font-size: 12px;
+        font-size: 1.2rem;
         text-align: end;
     }
     .star {
@@ -200,7 +203,7 @@ h1 {
                     justify-content: flex-start;  
                 }
                 .list3-blue, .list3-lan, .list3-act, .list1-red, .list1-yellow, .list1-orange, .list1-grey, .list2-green, .list2-lightgreen, .list2-cyan {
-                    font-size: 10px;
+                    font-size: 1rem;
                 }
                 .list2-green, .list2-lightgreen, .list2-cyan, .list3-blue, .list3-lan, .list3-act {
                     margin-left: 20px;
@@ -219,7 +222,6 @@ h1 {
                 width: 30%;
             }
             }
-       } 
-       
+       }  
     }
 }

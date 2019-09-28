@@ -3,12 +3,16 @@
   padding: 0;
   box-sizing: 0; }
 
+html {
+  font-size: 62.5%; }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 10px 50px; }
 
 h1 {
   text-align: center;
+  font-size: 3rem;
   font-variant: small-caps; }
 
 .table-main {
@@ -25,68 +29,68 @@ h1 {
       align-content: center; }
       .table-main td .list1-grey {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 1.5rem;
         padding-bottom: 5px;
-        list-style-image: url(image/grey-square.gif); }
+        list-style-image: url(../image/grey-square.gif); }
       .table-main td .list1-orange {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 1.5rem;
         padding-bottom: 5px;
-        list-style-image: url(image/orange-square.gif); }
+        list-style-image: url(../image/orange-square.gif); }
       .table-main td .list1-red {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 1.5rem;
         padding-bottom: 5px;
-        list-style-image: url(image/red-square.gif); }
+        list-style-image: url(../image/red-square.gif); }
       .table-main td .list1-yellow {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 1.5rem;
         padding-bottom: 5px;
-        list-style-image: url(image/yellow-square.gif); }
+        list-style-image: url(../image/yellow-square.gif); }
     .table-main td .list2-green {
       font-weight: bold;
-      font-size: 15px;
+      font-size: 1.5rem;
       padding-bottom: 5px;
-      list-style-image: url(image/green-square.gif); }
+      list-style-image: url(../image/green-square.gif); }
     .table-main td .list2-lightgreen {
       font-weight: bold;
-      font-size: 15px;
+      font-size: 1.5rem;
       padding-bottom: 5px;
-      list-style-image: url(image/lightgreen-square.gif); }
+      list-style-image: url(../image/lightgreen-square.gif); }
     .table-main td .list2-cyan {
       font-weight: bold;
-      font-size: 15px;
+      font-size: 1.5rem;
       padding-bottom: 5px;
-      list-style-image: url(image/cyan-square.gif); }
+      list-style-image: url(../image/cyan-square.gif); }
     .table-main td .list3-blue {
       font-weight: bold;
-      font-size: 15px;
+      font-size: 1.5rem;
       padding-bottom: 5px;
-      list-style-image: url(image/blue-square.gif); }
+      list-style-image: url(../image/blue-square.gif); }
     .table-main td .list3-lan {
       font-weight: bold;
-      font-size: 15px;
+      font-size: 1.5rem;
       padding-bottom: 5px;
-      list-style-image: url(image/lan-square.gif); }
+      list-style-image: url(../image/lan-square.gif); }
     .table-main td .list3-act {
       font-weight: bold;
-      font-size: 15px;
+      font-size: 1.5rem;
       padding-bottom: 5px;
-      list-style-image: url(image/act-square.gif); }
+      list-style-image: url(../image/act-square.gif); }
     .table-main td .number {
-      font-size: 10px;
+      font-size: 1rem;
       padding-top: 1px;
       padding-left: 2px; }
       .table-main td .number-span {
-        font-size: 14px;
+        font-size: 1.4rem;
         font-weight: bold;
         text-align: center; }
     .table-main td .fullname {
       text-align: center;
-      font-size: 8px; }
+      font-size: 0.8rem; }
     .table-main td .element {
       font-weight: 1000;
-      font-size: 25px;
+      font-size: 2.5rem;
       text-align: center; }
   .table-main .elements-grey {
     background-color: #a8a4a4; }
@@ -122,15 +126,15 @@ h1 {
     .table-sub td:first-child {
       width: 9%; }
     .table-sub td .number {
-      font-size: 10px;
+      font-size: 1rem;
       padding-top: 1px;
       padding-left: 2px; }
     .table-sub td .fullname {
       text-align: center;
-      font-size: 8px; }
+      font-size: 0.8rem; }
     .table-sub td .element {
       font-weight: 1000;
-      font-size: 25px;
+      font-size: 2.5rem;
       text-align: center; }
   .table-sub .elements-lan {
     background-color: #8d33e0; }
@@ -138,17 +142,17 @@ h1 {
     background-color: palevioletred; }
   .table-sub .group {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 1.2rem;
     text-align: end; }
   .table-sub .star {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 3rem;
     text-align: end;
     color: #8d33e0;
     width: 2%; }
   .table-sub .star2 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 3rem;
     text-align: end;
     color: palevioletred;
     width: 2%; }
@@ -166,7 +170,7 @@ h1 {
           flex-flow: column wrap;
           justify-content: flex-start; }
         .table-main tr td .list3-blue, .table-main tr td .list3-lan, .table-main tr td .list3-act, .table-main tr td .list1-red, .table-main tr td .list1-yellow, .table-main tr td .list1-orange, .table-main tr td .list1-grey, .table-main tr td .list2-green, .table-main tr td .list2-lightgreen, .table-main tr td .list2-cyan {
-          font-size: 10px; }
+          font-size: 1rem; }
         .table-main tr td .list2-green, .table-main tr td .list2-lightgreen, .table-main tr td .list2-cyan, .table-main tr td .list3-blue, .table-main tr td .list3-lan, .table-main tr td .list3-act {
           margin-left: 20px; }
   .table-sub tr {
