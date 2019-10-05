@@ -1,0 +1,133 @@
+.box {
+	text-decoration: none;
+	display: block;
+	background-color: rgb(141, 51, 224);
+	&__number {
+		@include typography-number;
+		&--span {
+			font-weight: bold;
+			text-align: center;
+			height: 6.3rem;
+			font-size: 1.5rem;
+		}
+	}
+	&__fullname {
+		@include typography-fullname;
+	}
+	&__element {
+		@include typography-element;
+	}
+	&:hover {
+		box-shadow: 1px 1px 1px 1px rgb(150, 149, 149);
+		background-color: darken($color:rgb(141, 51, 224), $amount: 15%);
+		transform: scale(1.05);
+	}
+	&:active {
+		box-shadow: 0.5px 0.5px 0.5px 0.5px gray;
+	}
+	&--grey {
+		background-color: rgb(168, 164, 164);
+		&:hover {
+			background-color: darken($color: rgb(168, 164, 164), $amount: 15%);
+			transform: scale(1.05);
+		}
+	}
+	&--red {
+		background-color: rgb(209, 22, 22);
+		&:hover {
+			background-color: darken($color: rgb(209, 22, 22), $amount: 15%);
+			transform: scale(1.05);
+		}
+	}
+	&--yellow {
+		background-color: rgb(255, 255, 0);
+		&:hover {
+			background-color: darken($color: rgb(255, 255, 0), $amount: 15%);
+			transform: scale(1.05);
+		}
+	}
+	&--green {
+		background-color: rgb(6, 158, 6);
+		&:hover {
+			background-color: darken($color: rgb(6, 158, 6), $amount: 15%);
+			transform: scale(1.05);
+		}
+	}
+	&--lightgreen {
+		background-color: rgb(92, 247, 195);
+		&:hover {
+			background-color: darken($color: rgb(92, 247, 195), $amount: 15%);
+			transform: scale(1.05);
+		}
+	}
+	&--cyan {
+		background-color: rgb(0, 255, 255);
+		&:hover {
+			background-color: darken($color: rgb(0, 255, 255), $amount: 15%);
+			transform: scale(1.05);
+		}
+	}
+	&--blue {
+		background-color: rgb(72, 72, 223);
+		&:hover {
+			background-color: darken($color: rgb(72, 72, 223), $amount: 15%);
+			transform: scale(1.05);
+		}
+	}
+}
+.box--act {
+	background-color: rgb(216, 112, 147);
+	&:hover {
+		background-color: darken($color: rgb(216, 112, 147), $amount: 15%);
+		transform: scale(1.05);
+	}
+}
+.list {
+	font-weight: bold;
+	font-size: 2rem;
+	margin: 1.5rem;
+	display: flex;
+	flex-flow: column wrap;
+	height: 50px;
+	width: 70%;
+		&--grey::before {
+			@include list-before;
+			background-color: rgb(168, 164, 164);
+		}
+		&--orange::before {
+			@include list-before;
+			background-color: rgb(231, 161, 31);
+		}
+		&--red::before {
+			@include list-before;
+			background-color: rgb(209, 22, 22);
+		}
+		&--yellow::before {
+			@include list-before;
+			background-color: rgb(255, 255, 0);
+		}
+		&--green::before {
+			@include list-before;
+			background-color: rgb(6, 158, 6);
+		}
+		&--lightgreen::before {
+			@include list-before;
+			background-color: rgb(92, 247, 195);
+		}
+		&--cyan::before {
+			@include list-before;
+			background-color: rgb(0, 255, 255);
+		}
+		&--blue::before {
+			@include list-before;
+			background-color: rgb(72, 72, 223);
+		}
+		&--lan::before {
+			@include list-before;
+			background-color: rgb(141, 51, 224);
+		}
+		&--act::before {
+			@include list-before;
+			background-color: rgb(216, 112, 147);
+		}
+	}
