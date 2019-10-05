@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2rem; }
+
+h1 {
+  font-size: 4rem;
+  font-variant: small-caps; }
+
+.wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center; }
+
+.table-main {
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .table-main .container {
+    width: 5.3%;
+    margin-top: 0.35rem; }
+    .table-main .container--empty {
+      width: 5.3%;
+      margin-top: 0.35rem; }
+
+.list {
+  font-weight: bold;
+  font-size: 1.1rem;
+  width: 18.3%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around; }
+  .list--grey::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+    background-color: #a8a4a4;
+    margin-left: 3em; }
+  .list--orange::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+    background-color: #e7a11f;
+    margin-left: 3em; }
+  .list--red::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+    background-color: #d11616;
+    margin-left: 3em; }
+  .list--yellow::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+    background-color: yellow;
+    margin-left: 3em; }
+  .list--green::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+    background-color: #069e06;
+    margin-left: 3.5em; }
+  .list--lightgreen::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+    background-color: #5cf7c3;
+    margin-left: 3.5em; }
+  .list--cyan::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+    background-color: cyan;
+    margin-left: 3.5em; }
+  .list--blue::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+    background-color: #4848df; }
+  .list--lan::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+    background-color: #8d33e0; }
+  .list--act::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+    background-color: #d87093; }
+
+.table-sub {
+  width: 87%;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .table-sub .group {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: end;
+    width: 11%; }
+  .table-sub .star {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: end;
+    width: 2%; }
+    .table-sub .star--1 {
+      color: #8d33e0; }
+    .table-sub .star--2 {
+      color: #d87093; }
+  .table-sub .container {
+    width: 5.5%;
+    margin-top: 3.3px; }
+
+.box {
+  text-decoration: none;
+  display: block;
+  background-color: #8d33e0; }
+  .box__number {
+    font-size: 1rem;
+    padding-top: 1px;
+    padding-left: 2px;
+    color: black; }
+    .box__number--span {
+      font-weight: bold;
+      text-align: center;
+      height: 6.3rem;
+      font-size: 1.5rem; }
+  .box__fullname {
+    text-align: center;
+    font-size: 0.7rem;
+    color: black; }
+  .box__element {
+    font-weight: 1000;
+    font-size: 2.5rem;
+    text-align: center;
+    color: black; }
+  .box:hover {
+    box-shadow: 1px 1px 1px 1px #969595;
+    background-color: #661aac; }
+  .box:active {
+    box-shadow: 0.5px 0.5px 0.5px 0.5px gray; }
+  .box--grey {
+    background-color: #a8a4a4; }
+    .box--grey:hover {
+      background-color: #837d7d; }
+  .box--red {
+    background-color: #d11616; }
+    .box--red:hover {
+      background-color: #8c0f0f; }
+  .box--yellow {
+    background-color: yellow; }
+    .box--yellow:hover {
+      background-color: #b3b300; }
+  .box--green {
+    background-color: #069e06; }
+    .box--green:hover {
+      background-color: #035403; }
+  .box--lightgreen {
+    background-color: #5cf7c3; }
+    .box--lightgreen:hover {
+      background-color: #13f3a8; }
+  .box--cyan {
+    background-color: cyan; }
+    .box--cyan:hover {
+      background-color: #00b3b3; }
+  .box--blue {
+    background-color: #4848df; }
+    .box--blue:hover {
+      background-color: #2121ba; }
+
+.box--act {
+  background-color: #d87093; }
+  .box--act:hover {
+    background-color: #c63666; }
+
+.table-sub tr {
+  display: flex;
+  flex-flow: row wrap;
+  height: 350px; }
+  .table-sub tr td {
+    width: 15%; }
+    .table-sub tr td:first-child {
+      width: 30%; }
+
+@media screen and (max-width: 1365px) {
+  html {
+    font-size: 50.2%; } }
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 40%; } }
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 55%; }
+  h1 {
+    text-align: center; }
+  .table-main {
+    width: 98%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .table-main .container {
+      width: 19%;
+      margin-top: 0.35rem; }
+      .table-main .container--empty {
+        width: 27%;
+        margin-top: 0.35rem; }
+  .list {
+    width: 33%; }
+    .list--grey::before {
+      margin-left: 0em; }
+    .list--orange::before {
+      margin-left: 0em; }
+    .list--red::before {
+      margin-left: 0em; }
+    .list--yellow::before {
+      margin-left: 0em; }
+    .list--lightgreen::before {
+      margin-left: 1em; }
+    .list--green::before {
+      margin-left: 1em; }
+    .list--cyan::before {
+      margin-left: 1em; }
+  .table-sub {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .table-sub .container {
+      width: 19%;
+      margin-top: 3.3px; }
+    .table-sub .group {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: center;
+      width: 80%;
+      display: grid;
+      align-items: center; }
+    .table-sub .star {
+      font-weight: bold;
+      font-size: 3rem;
+      text-align: end;
+      width: 20%;
+      text-align: start; }
+      .table-sub .star--1 {
+        color: #8d33e0; }
+      .table-sub .star--2 {
+        color: #d87093; } }

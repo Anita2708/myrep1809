@@ -1,0 +1,10 @@
+.u-two-rows {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.u-two-column {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}

@@ -1,0 +1,29 @@
+@mixin  typography {
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: end;   
+}
+@mixin typography-element {
+  font-weight: 1000;
+  font-size: 2.5rem;
+  text-align: center;
+  color: black;
+}
+@mixin typography-fullname {
+  text-align: center;
+  font-size: 0.7rem;
+  color: black;
+}
+@mixin typography-number {
+  font-size: 1rem;
+  padding-top: 1px;
+  padding-left: 2px;
+  color: black;
+}
+@mixin list-before {
+content: "";
+display: inline-block;
+width: 1.5rem;
+height: 1.5rem;
+margin-right: 5px;
+}
