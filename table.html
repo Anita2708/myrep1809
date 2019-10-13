@@ -9,7 +9,49 @@
 </head>
 <body>
     <div class= "wrapper">
+			<button class="btn-sign">Sign in</button>
+					<div class="modal-window">
+							<div class="modal-window--main">
+									<span class="btn--close">&#x02A2F;</span>
+									<span class="or"> &HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine; Or &HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine; </span>
+									<input type="email" name="email" id="email" placeholder="Email">
+									<input type="password" name="password" id="password" placeholder="Password">
+									<span class="bth--signin">SIGN IN</span>
+							</div>
+							<div class="modal-window--footer">
+								<span><a href="#">Forgot password?</a></span>
+								<span>Don't have an account? <a href="#">Get started</a> </span>
+							</div>
+						</div>
         <h1 class="table-name"> Periodic Table of the Elements</h1>
+        <div class="history">
+            <button class="history__header" id="history-name">Find out more about history of the periodic table of chemical elements...</button>
+						<div class="history__article" id="content">In 1669 German merchant and amateur alchemist Hennig Brand attempted to created a Philosopher’s Stone; an object that supposedly could turn metals into pure gold. He heated residues from boiled urine, and a liquid dropped out and burst into flames. This was the first discovery of phosphorus.
+							<br>In 1680 Robert Boyle also discovered phosphorus, and it became public.
+							<br>In 1809 at least 47 elements were discovered, and scientists began to see patterns in the characteristics.
+							<br>1863 English chemist John Newlands divided the then discovered 56 elements into 11 groups, based on characteristics.
+							<br>In 1869 Russian chemist Dimitri Mendeleev started the development of the periodic table, arranging chemical elements by atomic mass. He predicted the discovery of other elements, and left spaces open in his periodic table for them.<br>In 1886 French physicist Antoine Bequerel first discovered radioactivity. Thomson student from New Zealand Ernest Rutherford named three types of radiation; alpha, beta and gamma rays. Marie and Pierre Curie started working on the radiation of uranium and thorium, and subsequently discovered radium and polonium. They discovered that beta particles were negatively charged.<br>In 1894 Sir William Ramsay and Lord Rayleigh discovered the noble gases, which were added to the periodic table as group 0.<br>In 1897 English physicist J. J. Thomson first discovered electrons; small negatively charged particles in an atom. John Townsend and Robert Millikan determined their exact charge and mass.<br>In 1900 Bequerel discovered that electrons and beta particles as identified by the Curies are the same thing.<br>In 1903 Rutherford announced that radioactivity is caused by the breakdown of atoms.<br>In 1911 Rutherford and German physicist Hans Geiger discovered that electrons orbit the nucleus of an atom.
+							<br>In 1913 Bohr discovered that electrons move around a nucleus in discrete energy called orbitals. Radiation is emitted during movement from one orbital to another.
+							<br>In 1914 Rutherford first identified protons in the atomic nucleus. He also transmutated a nitrogen atom into an oxygen atom for the first time. English physicist Henry Moseley provided atomic numbers, based on the number of electrons in an atom, rather than based on atomic mass.
+							<br>In 1932 James Chadwick first discovered neutrons, and isotopes were identified. This was the complete basis for the periodic table. In that same year Englishman Cockroft and the Irishman Walton first split an atom by bombarding lithium in a particle accelerator, changing it to two helium nuclei.
+              <br>In 1945 Glenn Seaborg identified lanthanides and actinides (atomic number >92), which are usually placed below the periodic table.
+						</div>
+				</div>
+
+				<div class="learn-list">
+					<h3 class="learn-list__title">Elements to learn</h3>
+					<ul>
+					
+					</ul>
+						<form id="add-element">
+							<input type="checkbox" id="hide">
+							<label for="checkbox">Hide</label>
+							<input type="text" placeholder="Add an element...">
+							<button>Add</button>
+						</form>
+				</div>
+				
+
         <div class="table-main">
             <div class="container">
                 <a href="Hydrogen.html" target="_blank" class="box box--grey">
@@ -497,7 +539,7 @@
             </div>
             <div class="container">
                 <a href="#" class="box">
-                    <div class="box box__number box__number--span">57-71*</div>
+                    <div class="box box__number box__number--span" id="group">57-71*</div>
                     <div class="box__element"></div>
                     <div class="box__fullname"></div>
                     <div class="box__fullname"></div>
@@ -641,7 +683,7 @@
             </div>
             <div class="container">
                 <a href="#" class="box">
-                    <div class="box--act box__number box__number--span">89-103**</div>
+                    <div class="box--act box__number box__number--span" id="group">89-103**</div>
                     <div class="box__element"></div>
                     <div class="box__fullname"></div>
                     <div class="box__fullname"></div>
@@ -768,7 +810,7 @@
                 </a>
             </div>
         </div>                      
-        <div class="table-sub">
+        <div class="table-sub" id="table-series">
             <div class="group">LANTHANIDE SERIES</div>
             <div class="star star--1">*</div>
             <div class="container">
@@ -1028,5 +1070,6 @@
 			<div class="list--act">Actinide</div>
 		</div>
 </div>
+<script src="table.js"></script>
 </body>
 </html>

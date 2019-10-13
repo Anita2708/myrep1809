@@ -28,7 +28,7 @@ margin-top: 0.5rem;
   &__item {
     display: flex;
     flex-flow: column wrap;
-    width: 10.5%;
+    flex-grow: 1;
     padding: .5rem;
     margin: 0.5rem;
   }

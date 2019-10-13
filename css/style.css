@@ -66,7 +66,7 @@
   .data__item {
     display: flex;
     flex-flow: column wrap;
-    width: 10.5%;
+    flex-grow: 1;
     padding: .5rem;
     margin: 0.5rem; }
 
@@ -386,26 +386,99 @@ body {
     margin-right: 5px;
     background-color: #d87093; }
 
-.table-sub {
-  width: 87%;
-  margin-top: 20px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between; }
-  .table-sub .group {
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-align: end;
-    width: 11%; }
-  .table-sub .star {
-    font-weight: bold;
-    font-size: 3rem;
-    text-align: end;
-    width: 2%; }
-    .table-sub .star--1 {
-      color: #8d33e0; }
-    .table-sub .star--2 {
-      color: #d87093; }
-  .table-sub .container {
-    width: 5.5%;
-    margin-top: 3.3px; }
+.history {
+  align-self: flex-start;
+  margin-left: 75px; }
+
+.history__article {
+  display: none; }
+
+.table-sub--outline {
+  box-shadow: 2px 2px 5px 0px #1b1b1b;
+  transform: scale(1.05); }
+
+.learn-list {
+  background-color: rgba(46, 49, 189, 0.8);
+  padding: 3px;
+  position: absolute;
+  top: 10px;
+  right: 75px;
+  border-radius: 5px; }
+  .learn-list__title {
+    font-size: 1.5rem;
+    text-align: center; }
+  .learn-list ul {
+    list-style-type: none; }
+    .learn-list ul .list {
+      border-left: 2px solid gray;
+      margin-top: 3px;
+      height: 15px; }
+      .learn-list ul .list .name {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        width: 80%;
+        margin-left: 5px; }
+      .learn-list ul .list .btn-delete {
+        width: 50px;
+        font-weight: bold;
+        background-color: rgba(128, 128, 128, 0.7); }
+  .learn-list input[type=text] {
+    background-color: rgba(245, 243, 243, 0.7);
+    border-radius: 2px;
+    padding: 2px;
+    text-transform: capitalize; }
+
+label {
+  font-size: 1.3rem;
+  font-weight: bold; }
+
+.modal-window {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px gray;
+  animation-name: modalopen;
+  animation-duration: 1s; }
+  .modal-window--main {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center; }
+    .modal-window--main .btn--close {
+      align-self: flex-end;
+      font-size: 1.3rem;
+      font-weight: bold; }
+    .modal-window--main .or {
+      text-align: center;
+      color: #7c7ce9;
+      font-size: 1.3rem; }
+    .modal-window--main input[type=email] {
+      border: none;
+      border-bottom: 1px solid gray;
+      margin-top: 10px; }
+    .modal-window--main input[type=password] {
+      border: none;
+      border-bottom: 1px solid grey;
+      margin-top: 20px; }
+    .modal-window--main .bth--signin {
+      width: 98%;
+      height: 20px;
+      margin-top: 20px;
+      background-color: blueviolet;
+      color: white;
+      text-align: center;
+      padding-top: 10px; }
+  .modal-window--footer {
+    margin: 10px 5px;
+    display: flex;
+    justify-content: space-between; }
+
+@keyframes modalopen {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
